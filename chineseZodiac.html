@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <script>
+      function zodiac() {
+        var Monkey = "<img src = 'monkey.png' height = '150px' width = '150px'>";
+        var Rooster = "<img src = 'rooster.png' height = '150px' width = '150px'>";
+        var Dog = "<img src = 'dog.png' height = '150px' width = '150px'>";
+        var Pig = "<img src = 'pig.png' height = '150px' width = '150px'>";
+        var Rat = "<img src = 'rat.png' height = '150px' width = '150px'>";
+        var Ox = "<img src = 'ox.png' height = '150px' width = '150px'>";
+        var Tiger = "<img src = 'tiger.png' height = '150px' width = '150px'>";
+        var Rabbit = "<img src = 'rabbit.png' height = '150px' width = '150px'>";
+        var Dragon = "<img src = 'dragon.png' height = '150px' width = '150px'>";
+        var Snake = "<img src = 'snake.png' height = '150px' width = '150px'>";
+        var Horse = "<img src = 'horse.png' height = '150px' width = '150px'>";
+        var Goat = "<img src = 'goat.png' height = '150px' width = '150px'>";
+        var year = document.getElementById('input').value;
+        year = parseInt(year);
+        if (year%12 == 0) {
+          document.getElementById('output').innerHTML = Monkey + "<br>Monkey";
+        } else if (year%12 == 1) {
+          document.getElementById('output').innerHTML = Rooster + "<br>Rooster";
+        } else if (year%12 == 2) {
+          document.getElementById('output').innerHTML = Dog + "<br>Dog";
+        } else if (year%12 == 3) {
+          document.getElementById('output').innerHTML = Pig + "<br>Pig";
+        } else if (year%12 == 4) {
+          document.getElementById('output').innerHTML = Rat + "<br>Rat";
+        } else if (year%12 == 5) {
+          document.getElementById('output').innerHTML = Ox + "<br>Ox";
+        } else if (year%12 == 6) {
+          document.getElementById('output').innerHTML = Tiger + "<br>Tiger";
+        } else if (year%12 == 7) {
+          document.getElementById('output').innerHTML = Rabbit + "<br>Rabbit";
+        } else if (year%12 == 8) {
+          document.getElementById('output').innerHTML = Dragon + "<br>Dragon";
+        } else if (year%12 == 9) {
+          document.getElementById('output').innerHTML = Snake + "<br>Snake";
+        } else if (year%12 == 10) {
+          document.getElementById('output').innerHTML = Horse + "<br>Horse";
+        } else if (year%12 == 11) {
+          document.getElementById('output').innerHTML = Goat + "<br>Goat";
+        } else {
+          document.getElementById('output').innerHTML = "";
+        }
+      }
+    </script>
+    <style>
+    body {
+      color: #e2000b;
+      text-align: center;
+      font-family: monospace;
+      font-size: 25pt;
+      font-weight: bold;
+      background-color: #222222;
+      margin: 0;
+    }
+    p {
+      background-color: #e2000b;
+      color: #222222;
+      padding: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <p>Enter Your Birth Year</p>
+    <div class="in">
+      <input type="number" id="input" value="">
+      <input type="button" value="submit" onclick="zodiac()">
+    </div>
+    <br>
+      <span id="output"></span>
+  </body>
+<html>
